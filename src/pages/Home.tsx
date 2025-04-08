@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FoodCard from '../components/FoodCard';
@@ -104,36 +103,6 @@ const Home = () => {
             <Link to="/food" className="btn-primary">
               View Full Menu <ArrowRight size={18} className="ml-2" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Preview */}
-      <section className="py-16 bg-pitstop-lightblue/30">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="section-title">The JR's Corner Story</h2>
-              <p className="text-lg mb-6">
-                For over two decades, JR's Corner has been serving hungry travelers with quality food
-                and excellent service on highways across the country.
-              </p>
-              <p className="text-lg mb-6">
-                We believe that highway food doesn't have to be boring or unhealthy. That's why
-                we prepare our meals with fresh ingredients daily, ensuring you get the best quality
-                food whether you're on a long road trip or just passing by.
-              </p>
-              <Link to="/about" className="btn-secondary">
-                Learn More About Us
-              </Link>
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" 
-                alt="JR's Corner Store" 
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
