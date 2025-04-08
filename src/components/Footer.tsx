@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Clock, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 import Logo from './Logo';
@@ -39,6 +40,9 @@ const Footer = () => {
                 <Link to="/food" className="hover:text-pitstop-red transition-colors">Food Menu</Link>
               </li>
               <li>
+                <Link to="/drinks" className="hover:text-pitstop-red transition-colors">Drinks Menu</Link>
+              </li>
+              <li>
                 <Link to="/offers" className="hover:text-pitstop-red transition-colors">Offers & Deals</Link>
               </li>
               <li>
@@ -77,7 +81,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="mr-2 text-pitstop-red" />
-                <span>info@pitstopfeast.com</span>
+                <span>info@jrscorner.com</span>
               </li>
               <li className="flex items-center">
                 <Clock size={16} className="mr-2 text-pitstop-red" />
@@ -93,7 +97,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 pt-6 mt-6">
           <p className="text-center text-sm text-pitstop-cream">
-            &copy; {currentYear} Highway Feast. All rights reserved.
+            &copy; {currentYear} JR's Corner. All rights reserved.
           </p>
         </div>
       </div>

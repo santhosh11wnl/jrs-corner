@@ -27,6 +27,9 @@ const Navigation = () => {
             <Link to="/food" className="font-medium hover:text-pitstop-red transition-colors">
               Food
             </Link>
+            <Link to="/drinks" className="font-medium hover:text-pitstop-red transition-colors">
+              Drinks
+            </Link>
             <Link to="/offers" className="font-medium hover:text-pitstop-red transition-colors">
               Offers
             </Link>
@@ -69,6 +72,9 @@ const Navigation = () => {
             </Link>
             <Link to="/food" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
               Food
+            </Link>
+            <Link to="/drinks" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
+              Drinks
             </Link>
             <Link to="/offers" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
               Offers

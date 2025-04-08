@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import FoodLanding from "./pages/FoodLanding";
+import DrinksLanding from "./pages/DrinksLanding";
 import PizzaPage from "./pages/food-categories/PizzaPage";
 import ChickenPage from "./pages/food-categories/ChickenPage";
 import SnacksPage from "./pages/food-categories/SnacksPage";
@@ -32,6 +33,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/food" element={<FoodLanding />} />
+              <Route path="/drinks" element={<DrinksLanding />} />
               <Route path="/food/pizza" element={<PizzaPage />} />
               <Route path="/food/chicken" element={<ChickenPage />} />
               <Route path="/food/snacks" element={<SnacksPage />} />

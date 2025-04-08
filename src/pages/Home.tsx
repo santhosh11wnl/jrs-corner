@@ -43,13 +43,22 @@ const Home = () => {
       {/* Quick Navigation */}
       <section className="py-16 bg-pitstop-cream">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <Link 
               to="/food"
               className="bg-pitstop-red p-8 rounded-xl text-center text-white hover:bg-red-700 transition-colors"
             >
-              <h3 className="text-2xl font-diner mb-2">Explore Food Menu</h3>
+              <h3 className="text-2xl font-diner mb-2">Food Menu</h3>
               <p className="mb-4">Discover our delicious offerings</p>
+              <ArrowRight className="mx-auto" />
+            </Link>
+            
+            <Link 
+              to="/drinks"
+              className="bg-pitstop-blue p-8 rounded-xl text-center text-white hover:bg-blue-700 transition-colors"
+            >
+              <h3 className="text-2xl font-diner mb-2">Drinks Menu</h3>
+              <p className="mb-4">Refresh with our beverage selection</p>
               <ArrowRight className="mx-auto" />
             </Link>
             
@@ -58,7 +67,7 @@ const Home = () => {
               className="bg-pitstop-blue p-8 rounded-xl text-center text-white hover:bg-blue-700 transition-colors"
             >
               <h3 className="text-2xl font-diner mb-2">Find a Store</h3>
-              <p className="mb-4">Locate your nearest PitStop Feast</p>
+              <p className="mb-4">Locate your nearest JR's Corner</p>
               <ArrowRight className="mx-auto" />
             </Link>
             
@@ -104,9 +113,9 @@ const Home = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="section-title">The PitStop Feast Story</h2>
+              <h2 className="section-title">The JR's Corner Story</h2>
               <p className="text-lg mb-6">
-                For over two decades, PitStop Feast has been serving hungry travelers with quality food
+                For over two decades, JR's Corner has been serving hungry travelers with quality food
                 and excellent service on highways across the country.
               </p>
               <p className="text-lg mb-6">
@@ -121,7 +130,7 @@ const Home = () => {
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop" 
-                alt="PitStop Feast Store" 
+                alt="JR's Corner Store" 
                 className="w-full h-full object-cover"
               />
             </div>
