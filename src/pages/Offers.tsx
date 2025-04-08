@@ -41,6 +41,34 @@ const offerItems = [
   }
 ];
 
+// Happy Hour items from the provided image
+const happyHourItems = [
+  {
+    id: 1,
+    title: "Corndog's",
+    price: "0.99",
+    description: "Available during Happy Hours on weekend from 1PM to 3PM"
+  },
+  {
+    id: 2,
+    title: "Tornados",
+    price: "1.49",
+    description: "Available during Happy Hours on weekend from 1PM to 3PM"
+  },
+  {
+    id: 3,
+    title: "Egg Rolls",
+    price: "1.49",
+    description: "Available during Happy Hours on weekend from 1PM to 3PM"
+  },
+  {
+    id: 4,
+    title: "Fountain Drinks 20 oz",
+    price: "1.00",
+    description: "With Deli food purchase, during Happy Hours on weekend from 1PM to 3PM"
+  }
+];
+
 const Offers = () => {
   return (
     <div>
@@ -52,6 +80,39 @@ const Offers = () => {
         backgroundImage="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
       />
 
+      {/* Happy Hour Section */}
+      <section id="happy-hour" className="py-16 bg-pitstop-cream">
+        <div className="container-custom">
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden p-8">
+            <h2 className="text-3xl md:text-4xl font-diner text-pitstop-red mb-6 text-center">
+              Happy Hours on Weekend
+            </h2>
+            <div className="text-center mb-6">
+              <span className="bg-pitstop-darkblue text-white py-2 px-4 rounded-full font-medium">
+                1PM to 3PM on Weekends
+              </span>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+              {happyHourItems.map((item) => (
+                <div key={item.id} className="bg-pitstop-lightblue/10 p-6 rounded-lg text-center hover:shadow-md transition-shadow">
+                  <h3 className="text-xl font-diner text-pitstop-darkblue mb-2">{item.title}</h3>
+                  <p className="text-pitstop-red font-bold text-2xl mb-2">${item.price}</p>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              ))}
+            </div>
+            
+            <div className="mt-8 flex justify-center">
+              <a href="tel:+15551234567" className="btn-primary">
+                <Phone size={16} className="mr-2" /> Call to Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Regular Offers Section */}
       <section id="offers" className="py-16">
         <div className="container-custom">
           <h2 className="section-title text-center">Current Promotions</h2>

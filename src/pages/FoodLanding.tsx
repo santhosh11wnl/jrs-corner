@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FoodCard from '../components/FoodCard';
+import { Menu } from 'lucide-react';
 
 const foodCategories = [
   {
@@ -46,7 +47,7 @@ const FoodLanding = () => {
     <div>
       {/* Hero Section */}
       <Hero
-        title="Delicious, Ready-to-Go Food Just for You"
+        title="JR's Deli - Delicious, Ready-to-Go Food"
         subtitle="Quality ingredients, freshly prepared meals, and quick service to get you back on the road"
         ctaText="Browse Categories"
         ctaLink="#categories"
@@ -56,7 +57,15 @@ const FoodLanding = () => {
       {/* Food Categories */}
       <section id="categories" className="py-16">
         <div className="container-custom">
-          <h2 className="section-title text-center">Our Food Categories</h2>
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="section-title">Our Food Categories</h2>
+            <Link 
+              to="/full-menu" 
+              className="btn-primary flex items-center"
+            >
+              <Menu size={18} className="mr-2" /> View Full Menu
+            </Link>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {foodCategories.map((category) => (
@@ -80,20 +89,19 @@ const FoodLanding = () => {
             <div className="md:flex">
               <div className="md:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl font-diner text-pitstop-red mb-4">
-                  Special Combo Deals
+                  Weekend Happy Hours
                 </h2>
                 <p className="text-gray-600 mb-6 text-lg">
-                  Save more when you bundle! Check out our special combo offers and meal deals designed
-                  for families and hungry travelers.
+                  Join us on weekends from 1 PM to 3 PM for special deals on Corndogs, Tornados, Egg Rolls, and Fountain Drinks!
                 </p>
                 <Link to="/offers" className="btn-primary self-start">
-                  View All Deals
+                  View Happy Hour Deals
                 </Link>
               </div>
               <div className="md:w-1/2 h-64 md:h-auto relative">
                 <img 
                   src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=800&auto=format&fit=crop" 
-                  alt="Special Combo Deals" 
+                  alt="Happy Hour Deals" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>

@@ -6,24 +6,38 @@ import { Clock } from 'lucide-react';
 const breakfastItems = [
   {
     id: 1,
-    title: "Breakfast Burritos",
-    description: "Scrambled eggs, cheese, bacon or sausage, and potatoes wrapped in a warm tortilla",
+    title: "Breakfast Bar's",
+    description: "Convenient and filling breakfast bars to start your day",
     imagePath: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop",
-    price: "5.99"
+    price: "1.79"
   },
   {
     id: 2,
-    title: "Egg & Cheese Sandwich",
-    description: "Freshly made egg and melted cheese on your choice of bread - a morning classic",
+    title: "Breakfast Sandwiches",
+    description: "Delicious sandwiches with egg, cheese, and your choice of meat",
     imagePath: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800&auto=format&fit=crop",
-    price: "4.49"
+    price: "3.99"
   },
   {
     id: 3,
-    title: "Pancake Sandwich",
-    description: "Egg and sausage sandwiched between two fluffy pancakes with a side of syrup",
+    title: "Breakfast Biscuit",
+    description: "Flaky biscuit filled with breakfast favorites",
+    imagePath: "https://images.unsplash.com/photo-1590574783916-eb7eb0b38258?q=80&w=800&auto=format&fit=crop",
+    price: "3.99"
+  },
+  {
+    id: 4,
+    title: "Breakfast Burrito",
+    description: "Hearty breakfast wrapped in a warm tortilla",
+    imagePath: "https://images.unsplash.com/photo-1588614959060-4d144f28b207?q=80&w=800&auto=format&fit=crop",
+    price: "4.99"
+  },
+  {
+    id: 5,
+    title: "Stuffed Waffle",
+    description: "Waffle filled with sweet or savory ingredients",
     imagePath: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=800&auto=format&fit=crop",
-    price: "6.49"
+    price: "3.99"
   }
 ];
 

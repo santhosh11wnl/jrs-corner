@@ -30,6 +30,9 @@ const DrinkMenuItem = ({ title, description, imagePath, price }: DrinkMenuItemPr
               )}
             </div>
             <p className="text-gray-600 mt-2">{description}</p>
+            {title === "Fountain Drinks 20 oz" && (
+              <p className="text-pitstop-red mt-2 font-medium">Special: $1.00 with Deli food during Happy Hours!</p>
+            )}
           </div>
           
           <div className="mt-4 flex flex-wrap gap-3">
