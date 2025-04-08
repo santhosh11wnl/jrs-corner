@@ -1,4 +1,3 @@
-
 import Hero from '../components/Hero';
 
 const milestones = [
@@ -34,7 +33,7 @@ const About = () => {
     <div>
       <Hero
         title="Our Story"
-        subtitle="From a single highway stop to a nationwide chain - how PitStop Feast became travelers' favorite food destination"
+        subtitle="From a single highway stop to a nationwide chain - how we became travelers' favorite food destination"
         ctaText="Learn About Our Journey"
         ctaLink="#story"
         backgroundImage="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=1200&auto=format&fit=crop"
@@ -44,16 +43,16 @@ const About = () => {
       <section id="story" className="py-16">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="section-title text-center">About PitStop Feast</h2>
+            <h2 className="section-title text-center">About Us</h2>
             <div className="space-y-6 text-lg">
               <p>
-                Founded in 2005, PitStop Feast began with a simple idea: highway food doesn't have to be boring or unhealthy. Our founder, Michael Thompson, was tired of limited options during his frequent road trips and decided to create something better.
+                Founded in 2005, we began with a simple idea: highway food doesn't have to be boring or unhealthy. Our founder, Michael Thompson, was tired of limited options during his frequent road trips and decided to create something better.
               </p>
               <p>
                 Starting with a single location on Highway 95, we focused on serving fresh, delicious food prepared quickly but with care. Our commitment to quality and speed quickly made us a favorite among travelers.
               </p>
               <p>
-                Today, PitStop Feast has grown to over 75 locations across the country, but our mission remains the same: to provide travelers with convenient, high-quality food options that make their journey more enjoyable.
+                Today, we have grown to over 75 locations across the country, but our mission remains the same: to provide travelers with convenient, high-quality food options that make their journey more enjoyable.
               </p>
             </div>
           </div>

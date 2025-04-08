@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Clock, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
 import Logo from './Logo';
@@ -94,7 +93,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 pt-6 mt-6">
           <p className="text-center text-sm text-pitstop-cream">
-            &copy; {currentYear} PitStop Feast. All rights reserved.
+            &copy; {currentYear} Highway Feast. All rights reserved.
           </p>
         </div>
       </div>
