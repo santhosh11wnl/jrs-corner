@@ -68,7 +68,7 @@ const Contact = () => {
   return (
     <div>
       <Hero
-        title="Find a PitStop Feast Near You"
+        title="Find a JR's Corner Near You"
         subtitle="With locations across major highways, we're never far away when you need quality food and fuel"
         ctaText="View Locations"
         ctaLink="#locations"
