@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-pitstop-darkblue text-white pt-12 pb-6">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="mb-4">
               <Logo />
@@ -50,24 +50,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/contact" className="hover:text-pitstop-red transition-colors">Find a Store</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-diner mb-4">Important Info</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/about" className="hover:text-pitstop-red transition-colors">Our Story</Link>
-              </li>
-              <li>
-                <Link to="/privacy" className="hover:text-pitstop-red transition-colors">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="/terms" className="hover:text-pitstop-red transition-colors">Terms & Conditions</Link>
-              </li>
-              <li>
-                <Link to="/faq" className="hover:text-pitstop-red transition-colors">FAQs</Link>
               </li>
             </ul>
           </div>
