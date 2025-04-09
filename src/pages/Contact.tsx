@@ -8,26 +8,26 @@ import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 const locations = [
   {
     id: 1,
-    name: "Highway 95 North",
-    address: "1234 Highway 95 North, Cityville, ST 12345",
-    phone: "(555) 123-4567",
-    hours: "Open 24/7",
-    amenities: ["Restaurant", "Gas Station", "Convenience Store", "Clean Restrooms"]
+    name: "JR's Corner Ardmore",
+    address: "1500 SAM NOBLE PARKWAY, ARDMORE, OK 73401-7154",
+    phone: "+1 (580) 226-7925",
+    hours: "5am to 12am",
+    amenities: ["Restaurant", "Gas Station", "Convenience Store", "Clean Restrooms", "ATM", "Air Tower"]
   },
   {
     id: 2,
     name: "Interstate 80 Exit 42",
     address: "5678 Interstate 80, Townsburg, ST 67890",
-    phone: "(555) 987-6543",
-    hours: "Open 24/7",
+    phone: "+1 (580) 226-7925",
+    hours: "5am to 12am",
     amenities: ["Restaurant", "Gas Station", "Convenience Store", "Truck Parking"]
   },
   {
     id: 3,
     name: "Route 66 Classic",
     address: "9012 Historic Route 66, Oldtown, ST 34567",
-    phone: "(555) 456-7890",
-    hours: "Open 24/7",
+    phone: "+1 (580) 226-7925",
+    hours: "5am to 12am",
     amenities: ["Restaurant", "Gas Station", "Convenience Store", "EV Charging"]
   }
 ];
@@ -240,7 +240,7 @@ const Contact = () => {
                 <Phone size={24} className="text-pitstop-red mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Call Us</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">+1 (580) 226-7925</p>
                 </div>
               </div>
               
@@ -248,7 +248,7 @@ const Contact = () => {
                 <Mail size={24} className="text-pitstop-red mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">Email Us</h4>
-                  <p className="text-gray-600">info@pitstopfeast.com</p>
+                  <p className="text-gray-600">jrsardmore@gmail.com</p>
                 </div>
               </div>
             </div>

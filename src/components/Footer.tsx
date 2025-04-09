@@ -46,7 +46,7 @@ const Footer = () => {
                 <Link to="/offers" className="hover:text-pitstop-red transition-colors">Offers & Deals</Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-pitstop-red transition-colors">About Us</Link>
+                <Link to="/store-amenities" className="hover:text-pitstop-red transition-colors">Store Amenities</Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-pitstop-red transition-colors">Find a Store</Link>
@@ -59,19 +59,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Phone size={16} className="mr-2 text-pitstop-red" />
-                <span>(555) 123-4567</span>
+                <span>+1 (580) 226-7925</span>
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="mr-2 text-pitstop-red" />
-                <span>info@jrscorner.com</span>
+                <span>jrsardmore@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <Clock size={16} className="mr-2 text-pitstop-red" />
-                <span>Open 24/7</span>
+                <span>5am to 12am</span>
               </li>
               <li className="flex items-center">
                 <MapPin size={16} className="mr-2 text-pitstop-red" />
-                <span>Multiple locations across the country</span>
+                <span>1500 SAM NOBLE PARKWAY, ARDMORE, OK 73401-7154</span>
               </li>
             </ul>
           </div>

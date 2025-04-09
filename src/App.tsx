@@ -15,7 +15,7 @@ import SnacksPage from "./pages/food-categories/SnacksPage";
 import BreakfastPage from "./pages/food-categories/BreakfastPage";
 import BakeryPage from "./pages/food-categories/BakeryPage";
 import Offers from "./pages/Offers";
-import About from "./pages/About";
+import StoreAmenities from "./pages/StoreAmenities";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import FullMenuPage from "./pages/FullMenuPage";
@@ -42,7 +42,7 @@ const App = () => (
               <Route path="/food/bakery" element={<BakeryPage />} />
               <Route path="/full-menu" element={<FullMenuPage />} />
               <Route path="/offers" element={<Offers />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/store-amenities" element={<StoreAmenities />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

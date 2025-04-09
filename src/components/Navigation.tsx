@@ -33,8 +33,8 @@ const Navigation = () => {
             <Link to="/offers" className="font-medium hover:text-pitstop-red transition-colors">
               Offers
             </Link>
-            <Link to="/about" className="font-medium hover:text-pitstop-red transition-colors">
-              About Us
+            <Link to="/store-amenities" className="font-medium hover:text-pitstop-red transition-colors">
+              Store Amenities
             </Link>
             <Link to="/contact" className="font-medium hover:text-pitstop-red transition-colors">
               Find Us
@@ -42,9 +42,9 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-6">
-            <a href="tel:+15551234567" className="flex items-center text-pitstop-blue gap-2 hover:text-pitstop-red transition-colors">
+            <a href="tel:+15802267925" className="flex items-center text-pitstop-blue gap-2 hover:text-pitstop-red transition-colors">
               <Phone size={18} />
-              <span className="font-medium">(555) 123-4567</span>
+              <span className="font-medium">+1 (580) 226-7925</span>
             </a>
             <Link to="/contact" className="btn-primary">
               <MapPin className="mr-2" size={18} />
@@ -79,17 +79,17 @@ const Navigation = () => {
             <Link to="/offers" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
               Offers
             </Link>
-            <Link to="/about" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
-              About Us
+            <Link to="/store-amenities" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
+              Store Amenities
             </Link>
             <Link to="/contact" className="py-2 font-medium hover:text-pitstop-red transition-colors" onClick={toggleMenu}>
               Find Us
             </Link>
 
             <div className="pt-2 flex flex-col gap-4">
-              <a href="tel:+15551234567" className="flex items-center text-pitstop-blue gap-2">
+              <a href="tel:+15802267925" className="flex items-center text-pitstop-blue gap-2">
                 <Phone size={18} />
-                <span className="font-medium">(555) 123-4567</span>
+                <span className="font-medium">+1 (580) 226-7925</span>
               </a>
               <Link to="/contact" className="btn-primary inline-flex w-full justify-center" onClick={toggleMenu}>
                 <MapPin className="mr-2" size={18} />

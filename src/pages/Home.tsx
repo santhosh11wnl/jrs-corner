@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FoodCard from '../components/FoodCard';
@@ -62,11 +63,11 @@ const Home = () => {
             </Link>
             
             <Link 
-              to="/contact"
+              to="/store-amenities"
               className="bg-pitstop-blue p-8 rounded-xl text-center text-white hover:bg-blue-700 transition-colors"
             >
-              <h3 className="text-2xl font-diner mb-2">Find a Store</h3>
-              <p className="mb-4">Locate your nearest JR's Corner</p>
+              <h3 className="text-2xl font-diner mb-2">Store Amenities</h3>
+              <p className="mb-4">Explore our store features</p>
               <ArrowRight className="mx-auto" />
             </Link>
             
