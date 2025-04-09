@@ -35,8 +35,6 @@ const Home = () => {
       <Hero
         title="Fuel Your Journey, Satisfy Your Hunger"
         subtitle="Delicious food and quality fuel for travelers on the go. Stop by for a quick bite or a full meal at any of our convenient highway locations."
-        ctaText="Explore Our Menu"
-        ctaLink="/food"
         backgroundImage="https://images.unsplash.com/photo-1606131731446-5568d87113aa?q=80&w=1200&auto=format&fit=crop"
       />
 

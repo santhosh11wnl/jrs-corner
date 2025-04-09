@@ -49,8 +49,6 @@ const FoodLanding = () => {
       <Hero
         title="JR's Deli - Delicious, Ready-to-Go Food"
         subtitle="Quality ingredients, freshly prepared meals, and quick service to get you back on the road"
-        ctaText="Browse Categories"
-        ctaLink="#categories"
         backgroundImage="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop"
       />
 

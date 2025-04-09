@@ -7,11 +7,9 @@ const StoreAmenities = () => {
   return (
     <div>
       <Hero
-        title="Store Amenities"
-        subtitle="Everything you need for your journey, all in one place"
-        ctaText="Find Us"
-        ctaLink="/contact"
-        backgroundImage="https://images.unsplash.com/photo-1517677129300-07b130802f46?q=80&w=1200&auto=format&fit=crop"
+        title="Full Service Highway Oasis"
+        subtitle="Premium fuel options, clean facilities, and everything you need for your journey"
+        backgroundImage="https://images.unsplash.com/photo-1614294962526-544bea9f0e44?q=80&w=1200&auto=format&fit=crop"
       />
 
       <section className="py-16">

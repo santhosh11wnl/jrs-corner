@@ -1,12 +1,9 @@
 
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import React from 'react';
 
 interface HeroProps {
   title: string;
   subtitle: string;
-  ctaText: string;
-  ctaLink: string;
   backgroundImage: string;
   overlayColor?: string;
 }
@@ -14,13 +11,11 @@ interface HeroProps {
 const Hero = ({ 
   title, 
   subtitle, 
-  ctaText, 
-  ctaLink, 
   backgroundImage,
   overlayColor = 'bg-black/50'
 }: HeroProps) => {
   return (
-    <div className="relative h-[500px] md:h-[600px] flex items-center">
+    <div className="relative h-[400px] md:h-[500px] flex items-center">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -35,13 +30,6 @@ const Hero = ({
           <p className="text-lg md:text-xl mb-8 text-pitstop-cream">
             {subtitle}
           </p>
-          <Link
-            to={ctaLink}
-            className="btn-primary text-lg"
-          >
-            {ctaText}
-            <ArrowRight className="ml-2" size={20} />
-          </Link>
         </div>
       </div>
     </div>
