@@ -1,4 +1,3 @@
-
 import Hero from '../components/Hero';
 import { Phone, MessageCircle, Clock } from 'lucide-react';
 
@@ -41,7 +40,6 @@ const offerItems = [
   }
 ];
 
-// Happy Hour items from the provided image
 const happyHourItems = [
   {
     id: 1,
@@ -80,7 +78,6 @@ const Offers = () => {
         backgroundImage="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
       />
 
-      {/* Happy Hour Section */}
       <section id="happy-hour" className="py-16 bg-pitstop-cream">
         <div className="container-custom">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden p-8">
@@ -112,7 +109,6 @@ const Offers = () => {
         </div>
       </section>
 
-      {/* Regular Offers Section */}
       <section id="offers" className="py-16">
         <div className="container-custom">
           <h2 className="section-title text-center">Current Promotions</h2>
