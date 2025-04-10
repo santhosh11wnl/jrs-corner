@@ -6,13 +6,17 @@ interface HeroProps {
   subtitle: string;
   backgroundImage: string;
   overlayColor?: string;
+  ctaText?: string;
+  ctaLink?: string;
 }
 
 const Hero = ({ 
   title, 
   subtitle, 
   backgroundImage,
-  overlayColor = 'bg-black/50'
+  overlayColor = 'bg-black/50',
+  ctaText,
+  ctaLink
 }: HeroProps) => {
   return (
     <div className="relative h-[400px] md:h-[500px] flex items-center">
@@ -30,6 +34,14 @@ const Hero = ({
           <p className="text-lg md:text-xl mb-8 text-pitstop-cream">
             {subtitle}
           </p>
+          {ctaText && ctaLink && (
+            <a 
+              href={ctaLink}
+              className="btn-primary"
+            >
+              {ctaText}
+            </a>
+          )}
         </div>
       </div>
     </div>

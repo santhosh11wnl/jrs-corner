@@ -39,8 +39,8 @@ const DrinkMenuItem = ({ title, description, imagePath, price }: DrinkMenuItemPr
             <a href="tel:+15551234567" className="btn-secondary py-1.5 px-4 text-sm flex-1 md:flex-none">
               <Phone size={16} className="mr-2" /> Call Now
             </a>
-            <a href="https://wa.me/15551234567" className="btn-primary py-1.5 px-4 text-sm flex-1 md:flex-none">
-              <MessageCircle size={16} className="mr-2" /> Message Restaurant
+            <a href="sms:+15551234567" className="btn-primary py-1.5 px-4 text-sm flex-1 md:flex-none">
+              <MessageCircle size={16} className="mr-2" /> Send the order to this number from your phone
             </a>
           </div>
         </div>

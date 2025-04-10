@@ -1,3 +1,4 @@
+
 import Hero from '../components/Hero';
 import { Phone, MessageCircle, Clock } from 'lucide-react';
 
@@ -73,8 +74,6 @@ const Offers = () => {
       <Hero
         title="Special Deals & Offers"
         subtitle="Save more with our combos and special offers designed for hungry travelers"
-        ctaText="See All Deals"
-        ctaLink="#offers"
         backgroundImage="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop"
       />
 
@@ -147,8 +146,8 @@ const Offers = () => {
                         <a href="tel:+15551234567" className="btn-secondary py-2 px-6 flex-1 md:flex-none">
                           <Phone size={16} className="mr-2" /> Call to Order
                         </a>
-                        <a href="https://wa.me/15551234567" className="btn-primary py-2 px-6 flex-1 md:flex-none">
-                          <MessageCircle size={16} className="mr-2" /> Message to Redeem
+                        <a href="sms:+15551234567" className="btn-primary py-2 px-6 flex-1 md:flex-none">
+                          <MessageCircle size={16} className="mr-2" /> Send the order to this number from your phone
                         </a>
                       </div>
                     </div>
