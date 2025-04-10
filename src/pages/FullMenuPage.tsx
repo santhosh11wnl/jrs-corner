@@ -8,8 +8,6 @@ const FullMenuPage = () => {
       <Hero
         title="JR's Deli - Full Menu"
         subtitle="Explore our complete menu of delicious food and drink options"
-        ctaText="View Menu"
-        ctaLink="#menu"
         backgroundImage="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop"
       />
 
@@ -83,7 +81,7 @@ const FullMenuPage = () => {
                 </li>
                 <li className="flex justify-between items-center border-b border-gray-200 pb-2">
                   <span className="font-medium">Spring rolls</span>
-                  <span className="text-pitstop-red font-bold">$0.79 each, 3 for $2</span>
+                  <span className="text-pitstop-red font-bold">79¢ each, 3 for $2</span>
                 </li>
                 <li className="flex justify-between items-center border-b border-gray-200 pb-2">
                   <span className="font-medium">Cheese sticks</span>

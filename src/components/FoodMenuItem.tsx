@@ -1,6 +1,5 @@
 
 import { Phone, MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 interface FoodMenuItemProps {
   title: string;
@@ -34,10 +33,10 @@ const FoodMenuItem = ({ title, description, imagePath, price }: FoodMenuItemProp
           </div>
           
           <div className="mt-4 flex flex-wrap gap-3">
-            <a href="tel:+15551234567" className="btn-secondary py-1.5 px-4 text-sm flex-1 md:flex-none">
+            <a href="tel:+15802267925" className="btn-secondary py-1.5 px-4 text-sm flex-1 md:flex-none">
               <Phone size={16} className="mr-2" /> Call Now
             </a>
-            <a href="https://wa.me/15551234567" className="btn-primary py-1.5 px-4 text-sm flex-1 md:flex-none">
+            <a href="https://wa.me/15802267925" className="btn-primary py-1.5 px-4 text-sm flex-1 md:flex-none">
               <MessageCircle size={16} className="mr-2" /> Message
             </a>
           </div>
