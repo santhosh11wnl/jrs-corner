@@ -1,7 +1,9 @@
+
 import React from 'react';
 import { Download } from 'lucide-react';
 import Logo from './Logo';
 import { cn } from '@/lib/utils';
+
 const FacebookAssets = () => {
   // Function to trigger download of an element as an image
   const downloadAsImage = (elementId: string, fileName: string) => {
@@ -26,6 +28,7 @@ const FacebookAssets = () => {
       console.error('Failed to load html2canvas:', err);
     });
   };
+
   return <div className="container-custom py-16">
       <h1 className="section-title text-center mb-12">Facebook Assets</h1>
       <div className="grid grid-cols-1 gap-12">
@@ -102,4 +105,5 @@ const FacebookAssets = () => {
       </div>
     </div>;
 };
+
 export default FacebookAssets;
