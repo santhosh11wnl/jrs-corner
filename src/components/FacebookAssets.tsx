@@ -52,7 +52,10 @@ const FacebookAssets = () => {
                   </div>
                   <div className="bg-white/90 px-6 py-3 rounded-md">
                     <h2 className="text-xl font-diner text-center">
-                      <span className="text-pitstop-darkblue">FUEL</span> YOUR JOURNEY
+                      <span className="text-pitstop-darkblue">Fuel Your Journey,</span>
+                    </h2>
+                    <h2 className="text-xl font-diner text-center">
+                      <span className="text-pitstop-red">Satisfy Your Hunger</span>
                     </h2>
                     <p className="text-lg font-medium text-center text-pitstop-blue">Quality Food & Fuel 24/7</p>
                   </div>
