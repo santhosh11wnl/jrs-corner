@@ -19,6 +19,7 @@ import StoreAmenities from "./pages/StoreAmenities";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import FullMenuPage from "./pages/FullMenuPage";
+import FacebookAssets from "./components/FacebookAssets";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
               <Route path="/offers" element={<Offers />} />
               <Route path="/store-amenities" element={<StoreAmenities />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/facebook-assets" element={<FacebookAssets />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

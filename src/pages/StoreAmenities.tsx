@@ -9,7 +9,7 @@ const StoreAmenities = () => {
       <Hero
         title="Full Service Highway Oasis"
         subtitle="Premium fuel options, clean facilities, and everything you need for your journey"
-        backgroundImage="https://images.unsplash.com/photo-1581579186913-45ac24ed53d2?q=80&w=1200&auto=format&fit=crop"
+        backgroundImage="https://images.unsplash.com/photo-1545522908-6ea230c85fcd?q=80&w=1200&auto=format&fit=crop"
       />
 
       <section className="py-16">
@@ -116,4 +116,3 @@ const StoreAmenities = () => {
 };
 
 export default StoreAmenities;
-
