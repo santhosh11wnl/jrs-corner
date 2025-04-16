@@ -20,13 +20,6 @@ const foodCategories = [
     link: "/food/chicken"
   },
   {
-    id: 3,
-    title: "Snacks",
-    description: "Quick bites for anytime cravings - perfect for the road or when you need a little something",
-    imagePath: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=800&auto=format&fit=crop",
-    link: "/food/snacks"
-  },
-  {
     id: 4,
     title: "Breakfast",
     description: "Start your day deliciously with our breakfast options available from 6 AM - 11 AM",
@@ -65,7 +58,7 @@ const FoodLanding = () => {
             </Link>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {foodCategories.map((category) => (
               <FoodCard
                 key={category.id}

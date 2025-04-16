@@ -11,7 +11,6 @@ import FoodLanding from "./pages/FoodLanding";
 import DrinksLanding from "./pages/DrinksLanding";
 import PizzaPage from "./pages/food-categories/PizzaPage";
 import ChickenPage from "./pages/food-categories/ChickenPage";
-import SnacksPage from "./pages/food-categories/SnacksPage";
 import BreakfastPage from "./pages/food-categories/BreakfastPage";
 import BakeryPage from "./pages/food-categories/BakeryPage";
 import Offers from "./pages/Offers";
@@ -38,7 +37,6 @@ const App = () => (
               <Route path="/drinks" element={<DrinksLanding />} />
               <Route path="/food/pizza" element={<PizzaPage />} />
               <Route path="/food/chicken" element={<ChickenPage />} />
-              <Route path="/food/snacks" element={<SnacksPage />} />
               <Route path="/food/breakfast" element={<BreakfastPage />} />
               <Route path="/food/bakery" element={<BakeryPage />} />
               <Route path="/full-menu" element={<FullMenuPage />} />

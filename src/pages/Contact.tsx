@@ -12,7 +12,7 @@ const location = {
   phone: "+1 (580) 226-7925",
   hours: "5am to 12am",
   amenities: ["Restaurant", "Gas Station", "Convenience Store", "Clean Restrooms", "ATM", "Air Tower"],
-  coordinates: [-97.1376, 34.1742] // Approximate coordinates for Ardmore, OK
+  coordinates: [-97.1376, 34.1742] as [number, number] // Explicitly typed as tuple
 };
 
 const Contact = () => {
