@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,6 +18,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import FullMenuPage from "./pages/FullMenuPage";
 import FacebookAssets from "./components/FacebookAssets";
+import SnacksPage from "./pages/food-categories/SnacksPage";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +37,7 @@ const App = () => (
               <Route path="/drinks" element={<DrinksLanding />} />
               <Route path="/food/pizza" element={<PizzaPage />} />
               <Route path="/food/chicken" element={<ChickenPage />} />
+              <Route path="/food/snacks" element={<SnacksPage />} />
               <Route path="/food/breakfast" element={<BreakfastPage />} />
               <Route path="/food/bakery" element={<BakeryPage />} />
               <Route path="/full-menu" element={<FullMenuPage />} />

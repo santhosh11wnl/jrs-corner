@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FoodCard from '../components/FoodCard';
@@ -18,6 +17,13 @@ const foodCategories = [
     description: "Crispy, juicy, and finger-lickin' good! From wings to sandwiches, our chicken is always a hit",
     imagePath: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=800&auto=format&fit=crop",
     link: "/food/chicken"
+  },
+  {
+    id: 3,
+    title: "Snacks",
+    description: "Your favorite chips and snacks - Lay's, Doritos, Cheetos, Fritos, and Ruffles",
+    imagePath: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=800&auto=format&fit=crop",
+    link: "/food/snacks"
   },
   {
     id: 4,
