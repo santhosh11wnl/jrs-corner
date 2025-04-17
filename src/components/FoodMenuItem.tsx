@@ -2,27 +2,27 @@
 import { Phone, MessageCircle } from 'lucide-react';
 
 interface FoodMenuItemProps {
-  title: string;
+  name: string;
   description: string;
-  imagePath: string;
+  image: string;
   price?: string;
 }
 
-const FoodMenuItem = ({ title, description, imagePath, price }: FoodMenuItemProps) => {
+const FoodMenuItem = ({ name, description, image, price }: FoodMenuItemProps) => {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="md:flex h-full">
         <div className="md:w-1/3 h-48 md:h-auto overflow-hidden">
           <img 
-            src={imagePath} 
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            src={image} 
+            alt={name}
+            className="w-full h-48 md:h-full object-cover transition-transform duration-500 hover:scale-105"
           />
         </div>
         <div className="p-4 md:w-2/3 flex flex-col justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <h3 className="text-xl font-diner text-pitstop-darkblue">{title}</h3>
+              <h3 className="text-xl font-diner text-pitstop-darkblue">{name}</h3>
               {price && (
                 <span className="bg-pitstop-red text-white px-2 py-1 rounded font-medium text-sm">
                   ${price}
