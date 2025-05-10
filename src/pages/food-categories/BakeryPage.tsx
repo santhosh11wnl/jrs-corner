@@ -1,66 +1,58 @@
 
-import CategoryHeader from '../../components/CategoryHeader';
+import Hero from '../../components/Hero';
 import FoodMenuItem from '../../components/FoodMenuItem';
 
 const bakeryItems = [
   {
-    id: 1,
-    title: "Donuts",
-    description: "Assorted flavors including glazed, chocolate, and sprinkled - baked fresh daily",
-    imagePath: "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop",
-    price: "1.49"
+    name: "Glazed Donut",
+    description: "Classic glazed donut, made fresh daily",
+    price: "1.49",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 2,
-    title: "Muffins",
-    description: "Choose from blueberry, chocolate chip, or bran - perfect with coffee or tea",
-    imagePath: "https://images.unsplash.com/photo-1607958996333-41215ca520e2?q=80&w=800&auto=format&fit=crop",
-    price: "2.49"
+    name: "Chocolate Muffin",
+    description: "Rich chocolate muffin with chocolate chips",
+    price: "2.49",
+    image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 3,
-    title: "Croissants",
-    description: "Buttery and soft with a flaky exterior - plain or chocolate-filled options available",
-    imagePath: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop",
-    price: "2.99"
+    name: "Blueberry Muffin",
+    description: "Moist muffin packed with juicy blueberries",
+    price: "2.49",
+    image: "https://images.unsplash.com/photo-1599934555255-d363ddb32e1c?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 4,
-    title: "Brownies",
-    description: "Rich and fudgy chocolate brownies with a perfectly crisp top",
-    imagePath: "https://images.unsplash.com/photo-1589375890993-7b4d5cd8cea3?q=80&w=800&auto=format&fit=crop",
-    price: "2.99"
-  },
-  {
-    id: 5,
-    title: "Cookies",
-    description: "Choose from chocolate chip, oatmeal raisin, or sugar cookies - baked to perfection",
-    imagePath: "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800&auto=format&fit=crop",
-    price: "1.99"
+    name: "Cinnamon Roll",
+    description: "Warm cinnamon roll with sweet icing",
+    price: "2.99",
+    image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
 const BakeryPage = () => {
   return (
-    <div className="py-16">
-      <div className="container-custom">
-        <CategoryHeader 
-          title="Freshly Baked, Always Tasty"
-          description="Our bakery items are made fresh daily. Perfect with coffee or as a sweet treat anytime!"
-        />
-        
-        <div className="space-y-8">
-          {bakeryItems.map((item) => (
-            <FoodMenuItem 
-              key={item.id}
-              title={item.title}
-              description={item.description}
-              imagePath={item.imagePath}
-              price={item.price}
-            />
-          ))}
+    <div>
+      <Hero
+        title="Fresh Bakery"
+        subtitle="Freshly baked goods made daily, perfect for any time of day"
+        backgroundImage="https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?q=80&w=1200&auto=format&fit=crop"
+      />
+      
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-8">
+            {bakeryItems.map((item, index) => (
+              <FoodMenuItem
+                key={index}
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                image={item.image}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

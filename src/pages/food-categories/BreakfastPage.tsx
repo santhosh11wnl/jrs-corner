@@ -1,74 +1,58 @@
 
-import CategoryHeader from '../../components/CategoryHeader';
+import Hero from '../../components/Hero';
 import FoodMenuItem from '../../components/FoodMenuItem';
-import { Clock } from 'lucide-react';
 
 const breakfastItems = [
   {
-    id: 1,
-    title: "Breakfast Bar's",
-    description: "Convenient and filling breakfast bars to start your day",
-    imagePath: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop",
-    price: "1.79"
+    name: "Breakfast Burrito",
+    description: "Scrambled eggs, cheese, potatoes, and your choice of bacon or sausage wrapped in a flour tortilla",
+    price: "4.99",
+    image: "https://images.unsplash.com/photo-1626700051175-6818013e7d48?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 2,
-    title: "Breakfast Sandwiches",
-    description: "Delicious sandwiches with egg, cheese, and your choice of meat",
-    imagePath: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800&auto=format&fit=crop",
-    price: "3.99"
+    name: "Breakfast Sandwich",
+    description: "Egg and cheese with your choice of bacon, sausage, or ham on a toasted English muffin",
+    price: "3.99",
+    image: "https://images.unsplash.com/photo-1550507992-eb63ffee0847?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 3,
-    title: "Breakfast Biscuit",
-    description: "Flaky biscuit filled with breakfast favorites",
-    imagePath: "https://images.unsplash.com/photo-1590574783916-eb7eb0b38258?q=80&w=800&auto=format&fit=crop",
-    price: "3.99"
+    name: "Pancake Stack",
+    description: "Three fluffy pancakes served with butter and maple syrup",
+    price: "5.99",
+    image: "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?q=80&w=800&auto=format&fit=crop"
   },
   {
-    id: 4,
-    title: "Breakfast Burrito",
-    description: "Hearty breakfast wrapped in a warm tortilla",
-    imagePath: "https://images.unsplash.com/photo-1588614959060-4d144f28b207?q=80&w=800&auto=format&fit=crop",
-    price: "4.99"
-  },
-  {
-    id: 5,
-    title: "Stuffed Waffle",
-    description: "Waffle filled with sweet or savory ingredients",
-    imagePath: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=800&auto=format&fit=crop",
-    price: "3.99"
+    name: "Breakfast Platter",
+    description: "Two eggs any style, choice of meat, hash browns, and toast",
+    price: "7.99",
+    image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
 const BreakfastPage = () => {
   return (
-    <div className="py-16">
-      <div className="container-custom">
-        <CategoryHeader 
-          title="Start Your Day Deliciously"
-          description="Breakfast options to fuel your morning journey, available from 6 AM - 11 AM daily."
-        />
-        
-        <div className="bg-pitstop-red/10 rounded-lg p-4 mb-8 flex items-center">
-          <Clock className="mr-2 text-pitstop-red" size={20} />
-          <p className="text-pitstop-darkblue font-medium">
-            Breakfast items available from 6 AM – 11 AM daily
-          </p>
+    <div>
+      <Hero
+        title="Breakfast Menu"
+        subtitle="Start your day right with our delicious breakfast options"
+        backgroundImage="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=1200&auto=format&fit=crop"
+      />
+      
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 gap-8">
+            {breakfastItems.map((item, index) => (
+              <FoodMenuItem
+                key={index}
+                name={item.name}
+                description={item.description}
+                price={item.price}
+                image={item.image}
+              />
+            ))}
+          </div>
         </div>
-        
-        <div className="space-y-8">
-          {breakfastItems.map((item) => (
-            <FoodMenuItem 
-              key={item.id}
-              title={item.title}
-              description={item.description}
-              imagePath={item.imagePath}
-              price={item.price}
-            />
-          ))}
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
