@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jrscornerardmore.com/</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://jrscornerardmore.com/food</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://jrscornerardmore.com/drinks</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://jrscornerardmore.com/offers</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jrscornerardmore.com/store-amenities</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://jrscornerardmore.com/contact</loc>
+    <lastmod>2025-05-23</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
